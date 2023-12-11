@@ -60,7 +60,7 @@ async function userfinder(client,databaseAndCollection,target_name,target_email)
     return result;
 }
 
-app.post("wholesomeoverload.onrender.com/logIn", async (request, response) => {
+app.post("/logIn", async (request, response) => {
     const { name, email } = request.body;
     try {
         let result = await userfinder(client, databaseAndCollection, name, email);
@@ -88,7 +88,7 @@ async function insert_user(client,databaseAndCollection,new_application){
     await client.db(databaseAndCollection.db).collection(databaseAndCollection.collection).insertOne(new_application);
 }
 
-app.post("wholesomeoverload.onrender.com/sign_up", async (request,response) =>{
+app.post("/sign_up", async (request,response) =>{
     const {name,email} = request.body;
     global_user['name'] = name;
     global_user['email'] = email;
