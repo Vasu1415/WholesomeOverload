@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic HTML5 Document">
+    <meta name="keywords" content="HTML5, Responsive">
+	<title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Mooli&display=swap" rel="stylesheet">
+    <style>
+        html{
+            background: linear-gradient(to right, #0f2027, #000000);
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            font-family: 'Hedvig Letters Serif', serif;
+            color: #E6E6FA;
+        }
+        fieldset{
+            text-align: center;
+            font-size: 3rem;
+            border-radius: 0.5rem;
+        }
+        legend{
+            text-align: center;
+            font-size: 4rem;
+            background: linear-gradient(to right, pink,#C8A2C8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        input{
+            color: white;
+            padding: 10px 20px;
+            background-color: black;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px #aaa;
+            cursor: pointer;
+            font-size: 3rem;
+            transition: box-shadow 0.3s, transform 0.2s;
+            font-size: large;
+            color: #C8A2C8;
+            height: 2rem;
+            width: auto;
+            font-family: 'Hedvig Letters Serif', serif;
+        }
+        input:hover {
+            box-shadow: 4px 4px 10px crimson;
+            transform: translate(-2px, -2px);
+        }
+        #webspace{
+            width:30rem;
+        } 
+        button {
+            font-family: 'Hedvig Letters Serif', serif;
+            color: white;
+            padding: 10px 20px;
+            background-color: black;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px #aaa;
+            cursor: pointer;
+            font-size: 2rem;
+            transition: box-shadow 0.3s, transform 0.2s;
+            color: #C8A2C8;
+        }
+        button:hover {
+            box-shadow: 4px 4px 10px crimson;
+            transform: translate(-2px, -2px);
+        } 
+        #buttons_info_entry{
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <form action = "http://localhost:<%= portNumber %>/sign_up" method="post">
+            <fieldset>
+                <legend>
+                    Sign Up Page
+                </legend>
+                Enter your username:        <input type="text" name="name" placeholder="Username" required="required" />
+                <br><br>
+                Enter your email:       <input type="text" name="email" placeholder="Email" required="required" />
+                <br><br>
+                <button id = "buttons_info_entry" type="submit">Sign Me Up!</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

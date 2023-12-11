@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive" />
+    <title>Your Wholesome Dose</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Mooli&display=swap" rel="stylesheet"/>
+    <style>
+      html {
+        background: linear-gradient(to right, #add8e6, #ffb6c1, #e6e6fa);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+      }
+      body {
+        font-family: "Hedvig Letters Serif", serif;
+      }
+      #heading {
+        text-align: center;
+        font-size: 4rem;
+        border-radius: 10px; /* Rounded corners */
+        color: crimson;
+      }
+      p {
+        color: #000080;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      ul {
+        font-size: 1rem;
+      }
+      button {
+        color: white;
+        padding: 10px 20px;
+        background-color: black;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #aaa;
+        cursor: pointer;
+        font-size: 16px;
+        transition: box-shadow 0.3s, transform 0.2s;
+        color: #c8a2c8;
+        font-family: "Hedvig Letters Serif", serif;
+      }
+      button:hover {
+        box-shadow: 4px 4px 10px crimson;
+        transform: translate(-2px, -2px);
+      }
+      #buttons_info_entry {
+        text-align: center;
+        justify-content: center;
+      }
+      a {
+        color: crimson;
+      }
+      #button-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+      }
+
+      .wholesome-button {
+        border: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: auto; /* Width will adjust to the content */
+        height: 200px; /* Set a fixed height, or adjust as needed */
+        background-position: center;
+        cursor: pointer;
+        font-weight: bolder;
+        color: #c8a2c8;
+      }
+      #cat{
+        background-image: url(./Images/cat.jpg)
+      }
+      #end{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+        Welcome To Your Daily Dose of Wholesomeness
+    </div>
+    <p id="welcome_message">Hey there, random doodle-o! Thank you for taking out time to visit us. The website's goal is to provide you with your daily dose of wholesomeness which you might be missing out on.</p>
+    <p id="step_1_message">To begin you have two options:</p>
+    <ul id="option_list_id">
+      <div id="buttons_info_entry">
+        <button><b><em>If you already are a part of the community then, please log in:<a href="/logIN">      logIn</a></em></b></button>
+        <button><b><em>If you're a new user, please sign up:<a href="/sign_up">      signUp</a></em></b></button>
+      </div>
+    </ul>
+    <p>Fantastic! We have gathered all the necessary elements we needed to meet the requirements. Simply click the button below, that interests you the most and enjoy the wholesome dynamic transitions</p>
+    <div id="button-container">
+      <button class="wholesome-button" id="cat"><a href="/cat"><em><b>CATS OVERLOAD</b></em></a></button>
+    </div>
+    <p id="end">We intend to add more content in the future but for now this is all we have ^__^</p>
+  </body>
+</html>
