@@ -23,7 +23,7 @@ if (process.argv.length != 3) {
 	process.exit(1); 
 }
 const portNumber = process.argv[2];
-console.log(`Web server started and running at http://localhost:${portNumber}`); 
+console.log(`Web server started and running at wholesomeoverload.onrender.com:${portNumber}`); 
 process.stdout.write(`Stop to shutdown the server: `);
 process.stdin.on("readable", function (){ 
     let dataInput = process.stdin.read(); 
